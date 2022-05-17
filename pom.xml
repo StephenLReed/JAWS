@@ -3,12 +3,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <artifactId>Texai</artifactId>
-    <groupId>org.texai</groupId>
-    <version>1.0</version>
-  </parent>
-
   <groupId>org.texai</groupId>
   <artifactId>JAWS</artifactId>
   <packaging>jar</packaging>
