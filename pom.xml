@@ -7,13 +7,24 @@
   <artifactId>JAWS</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
-  
+
   <name>Java API for Wordnet Searching</name>
   <description>A Java API for the WordNet lexical knowledgebase</description>
   <url>http://lyle.smu.edu/~tspell/jaws</url>
-  
+
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <showDeprecation>true</showDeprecation>
+          <source>8</source>
+          <target>8</target>
+          8        </configuration>
+      </plugin>
+    
       <plugin>
         <!-- JAWS is shaded so that its dependencies do not conflict with any Maven project having KafkaBlockchain as a dependency -->
         <groupId>org.apache.maven.plugins</groupId>
@@ -57,7 +68,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  
+
   <distributionManagement>
     <!-- firewalled for developer updates only -->
     <repository>
